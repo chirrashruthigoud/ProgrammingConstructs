@@ -8,20 +8,29 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-        int age;
         public void ChecktheNum()
         {
-            Console.WriteLine("Enter the Number:");
-            age=Convert.ToInt32(Console.ReadLine());
-
-            if(age>=18)
+            Console.WriteLine("enter first Number:");
+           int x=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter second number:");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter third number:");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int largest;
+            if (x>=y && x>=z)
             {
-                Console.WriteLine("Candidate Eligible to Vote.");
+                largest = x;
             }
-            else
+            else if(y>=x && y>=z)
             {
-                 Console.WriteLine("Candidate Not Eligible to Vote.");
+                largest = y;
+            }else
+            {
+                largest = z;
             }
+            Console.WriteLine("the largest is {0}.", largest);
+            Console.ReadLine();
+            
         }
     }
 }

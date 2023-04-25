@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             ProgrammingConstruct num=new ProgrammingConstruct();
-             num.Table();
+             num.SumOfquares();
              Console.ReadLine();
             
         }

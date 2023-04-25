@@ -8,21 +8,36 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-            public void Factorial()
+        public void FlipCoin()
+        {
+            Random random = new Random();
+            int headcount = 0;
+            int tailscount = 0;
+
+            while (headcount > 20 && tailscount > 20)
             {
+                int result = random.Next(2);
+                if (result == 0)
+                {
+                    Console.WriteLine("heads");
+                    headcount++;
+                }
+                else
+                {
+                    Console.WriteLine("tails ");
+                    tailscount++;
+                }
+
+            }
+            if(headcount == 20)
+            {
+              Console.WriteLine("heads win");
+            }
+            else
+            {
+              Console.WriteLine("Tails win");
+            }
             
-            Console.WriteLine("Enter a number:");
-            int n =int.Parse(Console.ReadLine());
-            int factorial = 1;
-            for ( int i = 1; i <= n; i++)
-            {
-                factorial *=i;
-
-                Console.WriteLine($"{n}!={factorial}.");
-            }
-
-            Console.ReadKey();  
-            }
+        }
     }
- 
 }

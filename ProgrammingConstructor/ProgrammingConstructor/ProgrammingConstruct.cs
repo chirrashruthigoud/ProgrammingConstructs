@@ -9,21 +9,19 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-        public void ReverseString()
+        public void SumofNaturalnum()
         {
-            Console.WriteLine("enter a name");
-            string name= Console.ReadLine();
-            string xname = " ";
+            int n = 5;
+            int sum = 0;
 
-            int i = name.Length - 1;
-
-            while(i>=0)
+            int i = 1;
+            while(i <= n)
             {
-                xname += name[i];
-                i--;
-            }
-            Console.WriteLine($"reverse name is : {xname}");
+                sum += i;
+                i++;
 
+            }
+            Console.WriteLine($"the first natural {n}is : {sum}");
         }
     }
 }

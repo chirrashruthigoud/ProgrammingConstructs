@@ -8,17 +8,17 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-            public void SumOfquares()
+            public void Factorial()
             {
-            int i;
+            
             Console.WriteLine("Enter a number:");
             int n =int.Parse(Console.ReadLine());
-            int sumofsquare = 0;
-            for (i = 1; i <= n; i++)
+            int factorial = 1;
+            for ( int i = 1; i <= n; i++)
             {
-                sumofsquare=i*i;
+                factorial *=i;
 
-                Console.WriteLine($"The sum of squares numbers {n} start of {i} is {sumofsquare}.");
+                Console.WriteLine($"{n}!={factorial}.");
             }
 
             Console.ReadKey();  

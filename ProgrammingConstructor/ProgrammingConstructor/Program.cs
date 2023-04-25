@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             ProgrammingConstruct num=new ProgrammingConstruct();
-             num.FlipCoin();
+             num.ReverseString();
              Console.ReadLine();
             
         }

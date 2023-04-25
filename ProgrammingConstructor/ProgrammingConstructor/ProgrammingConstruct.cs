@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,36 +9,21 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-        public void FlipCoin()
+        public void ReverseString()
         {
-            Random random = new Random();
-            int headcount = 0;
-            int tailscount = 0;
+            Console.WriteLine("enter a name");
+            string name= Console.ReadLine();
+            string xname = " ";
 
-            while (headcount > 20 && tailscount > 20)
-            {
-                int result = random.Next(2);
-                if (result == 0)
-                {
-                    Console.WriteLine("heads");
-                    headcount++;
-                }
-                else
-                {
-                    Console.WriteLine("tails ");
-                    tailscount++;
-                }
+            int i = name.Length - 1;
 
-            }
-            if(headcount == 20)
+            while(i>=0)
             {
-              Console.WriteLine("heads win");
+                xname += name[i];
+                i--;
             }
-            else
-            {
-              Console.WriteLine("Tails win");
-            }
-            
+            Console.WriteLine($"reverse name is : {xname}");
+
         }
     }
 }

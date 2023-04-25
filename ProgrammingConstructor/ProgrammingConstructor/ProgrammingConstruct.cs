@@ -10,27 +10,27 @@ namespace ProgrammingConstructor
     {
         public void ChecktheNum()
         {
-            Console.WriteLine("enter first Number:");
-           int x=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter second number:");
-            int y = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter third number:");
-            int z = Convert.ToInt32(Console.ReadLine());
-            int largest;
-            if (x>=y && x>=z)
+            int Mathsmarks, Pysicsmarks, Chemistrymarks, totalmarks;
+            Console.WriteLine("Enter the Maths marks:");
+            Mathsmarks = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Pysics marks:");
+            Pysicsmarks = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Chemistry:");
+            Chemistrymarks = Convert.ToInt32(Console.ReadLine());
+            totalmarks = Mathsmarks + Pysicsmarks + Chemistrymarks;
+            if (Mathsmarks >= 65 && Pysicsmarks >= 55 && Chemistrymarks >= 50 && totalmarks >= 180)
             {
-                largest = x;
+                Console.WriteLine("The candidate is eligible for admission.");
             }
-            else if(y>=x && y>=z)
+            else if (Mathsmarks >= 65 && (Pysicsmarks >= 55 || Chemistrymarks >= 50) && (Mathsmarks + Pysicsmarks + Chemistrymarks >= 140))
             {
-                largest = y;
-            }else
-            {
-                largest = z;
+                Console.WriteLine("The candidate is eligible for admission.");
             }
-            Console.WriteLine("the largest is {0}.", largest);
+            else
+            {
+                Console.WriteLine("The candidate is not eligible for admission.");
+            }
             Console.ReadLine();
-            
         }
     }
 }

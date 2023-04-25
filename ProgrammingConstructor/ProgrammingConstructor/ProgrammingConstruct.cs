@@ -8,39 +8,18 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-            public void WeekDays()
+            public void Table()
             {
-            Console.WriteLine("Enter a Day:");
-            int Day=int.Parse(Console.ReadLine());
+            int i;
+            Console.WriteLine("Enter a number:");
+            int n =int.Parse(Console.ReadLine());
 
-                switch (Day)
-                {
-                    case 1:
-                    Console.WriteLine("It is Monday.");
-                     break;
-                    case 2:
-                    Console.WriteLine("It is Tuseday.");
-                    break;
-                    case 3:
-                    Console.WriteLine("It is Wednesday.");
-                    break;
-                    case 4:
-                    Console.WriteLine("It is Thusday.");
-                    break;
-                   case 5:
-                    Console.WriteLine("It is Friday.");
-                    break;
-                    case 6:
-                    Console.WriteLine("It is Saturday.");
-                    break;
-                    case 7:
-                    Console.WriteLine("It is Sunday.");
-                    break;
-                   
-                    default:
-                        Console.WriteLine("Invalid Day");
-                        break;
-                }
+            for (i = 1; i <= n; i++)
+            {
+                Console.WriteLine($"table of 3*{i}={3*i}");
+            }
+
+            Console.ReadKey();  
             }
         }
     }

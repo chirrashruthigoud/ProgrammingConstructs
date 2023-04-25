@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            CheckInteger num=new CheckInteger();
+            ProgrammingConstruct num=new ProgrammingConstruct();
             num.ChecktheNum();
         }
     }

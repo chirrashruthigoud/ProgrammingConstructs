@@ -6,24 +6,21 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstructor
 {
-    public class CheckInteger
+    public class ProgrammingConstruct
     {
-        int num_One;
-        int num_Two;
+        int num;
         public void ChecktheNum()
-           
         {
             Console.WriteLine("Enter the Number:");
-            num_One=Convert.ToInt32(Console.ReadLine());
-            num_Two=Convert.ToInt32(Console.ReadLine());
+            num=Convert.ToInt32(Console.ReadLine());
 
-            if(num_One == num_Two)
+            if(num%2 ==0)
             {
-                Console.WriteLine("Number is equal.");
+                Console.WriteLine("Number is even.");
             }
             else
             {
-                 Console.WriteLine("Number is not equal");
+                 Console.WriteLine("Number is odd.");
             }
         }
     }

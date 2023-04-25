@@ -8,29 +8,30 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-        public void ChecktheNum()
-        {
-            int Mathsmarks, Pysicsmarks, Chemistrymarks, totalmarks;
-            Console.WriteLine("Enter the Maths marks:");
-            Mathsmarks = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Pysics marks:");
-            Pysicsmarks = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Chemistry:");
-            Chemistrymarks = Convert.ToInt32(Console.ReadLine());
-            totalmarks = Mathsmarks + Pysicsmarks + Chemistrymarks;
-            if (Mathsmarks >= 65 && Pysicsmarks >= 55 && Chemistrymarks >= 50 && totalmarks >= 180)
+            public static double Calculate(double num_One, double num_Two, int Numresult)
             {
-                Console.WriteLine("The candidate is eligible for admission.");
+                double result = 0;
+
+                switch (Numresult)
+                {
+                    case 1:
+                        result = num_One + num_Two;
+                        break;
+                    case 2:
+                        result = num_One - num_Two;
+                        break;
+                    case 3:
+                        result = num_One * num_Two;
+                        break;
+                    case 4:
+                        result = num_One / num_Two;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid");
+                        break;
+                }
+
+                return result;
             }
-            else if (Mathsmarks >= 65 && (Pysicsmarks >= 55 || Chemistrymarks >= 50) && (Mathsmarks + Pysicsmarks + Chemistrymarks >= 140))
-            {
-                Console.WriteLine("The candidate is eligible for admission.");
-            }
-            else
-            {
-                Console.WriteLine("The candidate is not eligible for admission.");
-            }
-            Console.ReadLine();
         }
     }
-}

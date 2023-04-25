@@ -6,6 +6,7 @@
         {
             ProgrammingConstruct num=new ProgrammingConstruct();
             num.ChecktheNum();
+            Console.ReadLine();
         }
     }
 }

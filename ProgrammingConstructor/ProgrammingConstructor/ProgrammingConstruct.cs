@@ -8,19 +8,19 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-        int num;
+        int age;
         public void ChecktheNum()
         {
             Console.WriteLine("Enter the Number:");
-            num=Convert.ToInt32(Console.ReadLine());
+            age=Convert.ToInt32(Console.ReadLine());
 
-            if(num%2 ==0)
+            if(age>=18)
             {
-                Console.WriteLine("Number is even.");
+                Console.WriteLine("Candidate Eligible to Vote.");
             }
             else
             {
-                 Console.WriteLine("Number is odd.");
+                 Console.WriteLine("Candidate Not Eligible to Vote.");
             }
         }
     }

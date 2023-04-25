@@ -8,30 +8,39 @@ namespace ProgrammingConstructor
 {
     public class ProgrammingConstruct
     {
-            public static double Calculate(double num_One, double num_Two, int Numresult)
+            public void WeekDays()
             {
-                double result = 0;
+            Console.WriteLine("Enter a Day:");
+            int Day=int.Parse(Console.ReadLine());
 
-                switch (Numresult)
+                switch (Day)
                 {
                     case 1:
-                        result = num_One + num_Two;
-                        break;
+                    Console.WriteLine("It is Monday.");
+                     break;
                     case 2:
-                        result = num_One - num_Two;
-                        break;
+                    Console.WriteLine("It is Tuseday.");
+                    break;
                     case 3:
-                        result = num_One * num_Two;
-                        break;
+                    Console.WriteLine("It is Wednesday.");
+                    break;
                     case 4:
-                        result = num_One / num_Two;
-                        break;
+                    Console.WriteLine("It is Thusday.");
+                    break;
+                   case 5:
+                    Console.WriteLine("It is Friday.");
+                    break;
+                    case 6:
+                    Console.WriteLine("It is Saturday.");
+                    break;
+                    case 7:
+                    Console.WriteLine("It is Sunday.");
+                    break;
+                   
                     default:
-                        Console.WriteLine("Invalid");
+                        Console.WriteLine("Invalid Day");
                         break;
                 }
-
-                return result;
             }
         }
     }
